@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from "gatsby"
 import _ from "lodash";
-import { Modal, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import cosmicService from './../services/cosmicService';
 
 const Iphone8 = (props) => {
     return <div>
-        <img src={require('../images/apple-iphone-8-plus-0.jpg')} className="cart-image" />
+        <img src={require('../images/apple-iphone-8-plus-0.jpg')} className="cart-image" alt="iphone8"/>
         <h6 className="cart-pro-text">iPhone 8</h6>
     </div>
 }
 
 const IphoneX = (props) => {
     return <div>
-        <img src={require('../images/apple-iphone-x-new-1.jpg')} className="cart-image" />
+        <img src={require('../images/apple-iphone-x-new-1.jpg')} className="cart-image" alt="iphonex" />
         <h6 className="cart-pro-text">iPhone X</h6>
 
     </div>
@@ -21,7 +21,7 @@ const IphoneX = (props) => {
 
 const IphoneXS = (props) => {
     return <div>
-        <img src={require('../images/iphone-xs-img.jpg')} className="cart-image" />
+        <img src={require('../images/iphone-xs-img.jpg')} className="cart-image" alt="iphonexs" />
         <h6 className="cart-pro-text">iPhone XS</h6>
     </div>
 }

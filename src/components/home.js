@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Image from "../components/image"
 import Iphone8 from "./iPhones/iphone8"
 import Iphonex from "./iPhones/iphonex"
 import Iphonexs from "./iPhones/iphonexs"
