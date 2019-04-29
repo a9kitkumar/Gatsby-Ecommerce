@@ -1,0 +1,23 @@
+{
+  "bucket": {
+    "_id": "5cc1ead2516526548dab945e",
+    "slug": "gatsby-ecommerce",
+    "title": "Gatsby Ecommerce",
+    "object_types": [
+      {
+        "title": "orders",
+        "slug": "orders",
+        "singular": "orders",
+        "metafields": [],
+        "options": {
+          "slug_field": 1,
+          "content_editor": 1
+        },
+        "preview_link": "",
+        "priority_locale": null
+      }
+    ],
+    "objects": [],
+    "media": []
+  }
+}
