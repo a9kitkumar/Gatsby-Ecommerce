@@ -1,12 +1,17 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-ecommerce-app",
   "private": true,
+  "engines": {
+    "npm": "5.7.1",
+    "node": "9.5.0"
+  },
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ankit",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
+    "express": "^4.16.4",
     "gatsby": "^2.3.27",
     "gatsby-image": "^2.0.40",
     "gatsby-plugin-manifest": "^2.0.29",
@@ -16,7 +21,9 @@
     "gatsby-source-filesystem": "^2.0.31",
     "gatsby-transformer-sharp": "^2.1.18",
     "history": "^4.9.0",
+    "http": "0.0.0",
     "lodash": "^4.17.11",
+    "path": "^0.12.7",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.8",
@@ -35,9 +42,10 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
+    "start": "node server.js",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
