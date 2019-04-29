@@ -56,7 +56,6 @@ class Cart extends Component {
     // getting products which are in cart
     getProducts() {
         this.productArray = _.values(JSON.parse(localStorage.getItem('products')));
-        console.log(this.productArray);
         if (this.productArray.length < 1) {
             this.setState({ isEmpty: "true" });
             this.setState({ dynamic: 'dynamic' });
@@ -88,7 +87,6 @@ class Cart extends Component {
             this.setState({ iphoneXS: true })
             amount = amount + 1449;
         }
-        console.log(amount)
         this.setState({amount: amount})
     }
 
@@ -116,10 +114,8 @@ class Cart extends Component {
     {
         this.setState({isLoading: 'Placing order...'})
       e.preventDefault();
-        console.log(this.state.userName);
         cosmicService.placeOrder(this.state.userName, this.state.address, this.state.cardNumber, this.state.cvv, this.state.cardExpiryDate, this.state.mobile, this.state.amount)
         .then((result)=>{
-            console.log(result);
             this.setState({isLoading: 'Order successfully placed!'});
             setTimeout(() => {
                 this.setState({checkoutShow: false});
